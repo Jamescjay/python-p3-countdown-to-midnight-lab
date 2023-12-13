@@ -1,3 +1,19 @@
 # your code goes here!
-def countdown(num):
-    pass
+import time
+
+def countdown(seconds):
+    while seconds > 0:
+        print(f'{seconds} SECOND(S)!')
+        seconds -= 1
+    print('HAPPY NEW YEAR!')
+
+
+def countdown_with_sleep(seconds):
+    while seconds > 0:
+        print(f'{seconds} SECOND(S)!')
+        time.sleep(1)  # Sleep for 1 second
+        seconds -= 1
+    print('HAPPY NEW YEAR!')
+
+countdown(10)
+countdown_with_sleep(10)
